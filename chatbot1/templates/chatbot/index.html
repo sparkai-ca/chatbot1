@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <div>
+        <form action="/" method="post">
+            {% csrf_token %}
+            <input type="text" name="inputer" placeholder="Question here"/>
+            <input type="submit"/>
+        </form>
+    </div>
+    <div>
+        <p><b>Answer:</b> <br> <i>{{key}}</i></p>
+    </div>
+</body>
+</html>
